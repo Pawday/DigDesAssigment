@@ -26,7 +26,7 @@ WITH RECURSIVE R AS
             ("CURRENT_EMPLOYEE_ARRAY" = "TOP_LEADERS_ARRAY")
         )
 --         AND "STEP" < SOME_MAX_DEPTH_LIMIT --- Где SOME_MAX_DEPTH_LIMIT - опциональный предел цепочки начальников
-) SELECT "STEP" AS "TREE_DEPTH" FROM R ORDER BY "STEP" DESC LIMIT 1;
--- ) SELECT * FROM R; -- закомментируйте эту строчку и раскомментируйте строчку выше для отображения промежуточных этапов работы запроса
+) SELECT "STEP" AS "TREE_DEPTH" FROM R ORDER BY "STEP" DESC LIMIT 1; -- закомментируйте эту строчку и раскомментируйте строчку ниже для отображения промежуточных этапов работы запроса
+-- ) SELECT * FROM R;
 
 
