@@ -90,7 +90,7 @@ namespace WordsCounter
                     .Select(c => c)
                     .Where(c => false == Char.IsLetter(c))
                     .Where(c => false == Char.IsNumber(c))
-                    .Where(c => false == (c == '`' || c == '\'' || c == '\''))
+                    .Where(c => false == (c == '`' || c == '\''))
                     .ToArray();
             }
 
