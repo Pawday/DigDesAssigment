@@ -27,7 +27,7 @@ namespace WordsCounter
 
         public void DecrementCounter()
         {
-            this._stringCount++;
+            this._stringCount--;
         }
 
         public ulong StringCount => _stringCount;
@@ -62,9 +62,6 @@ namespace WordsCounter
                 PrintUsage();
                 return;
             }
-
-            ReadOnlySpan<char> a = "Hello";
-            ReadOnlySpan<char> b = "Hello";
 
             var inputFile = new FileInfo(args[0]);
             var outputFile = new FileInfo(args[1]);
